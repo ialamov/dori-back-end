@@ -1,0 +1,17 @@
+{
+  "name": "dori-back-end",
+  "version": "1.0.0",
+  "description": "A back-end part for the management system for social assistance called Dori",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "system",
+    "management",
+    "social",
+    "assistance"
+  ],
+  "author": "Douglas de Oliveira Ialamov",
+  "license": "GPL-3.0-or-later"
+}
