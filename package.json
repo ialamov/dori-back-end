@@ -2,12 +2,12 @@
   "name": "dori-back-end",
   "version": "1.0.0",
   "description": "A back-end part for the management system for social assistance called Dori",
-  "main": "src/app.ts",
+  "main": "src/server.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node src/app.ts",
-    "dev": "nodemon --exec tsx src/app.ts",
+    "start": "node src/server.ts",
+    "dev": "nodemon --watch src --exec tsx src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
