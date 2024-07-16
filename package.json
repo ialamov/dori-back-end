@@ -2,8 +2,12 @@
   "name": "dori-back-end",
   "version": "1.0.0",
   "description": "A back-end part for the management system for social assistance called Dori",
-  "main": "index.js",
+  "main": "src/app.ts",
+  "type": "module",
   "scripts": {
+    "build": "tsc",
+    "start": "node src/app.ts",
+    "dev": "nodemon --exec tsx src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,5 +17,23 @@
     "assistance"
   ],
   "author": "Douglas de Oliveira Ialamov",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@mysql/xdevapi": "^8.0.35",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "mysql2": "^3.10.3",
+    "nodemon": "^3.1.4",
+    "tsx": "^4.16.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
 }
