@@ -1,6 +1,4 @@
-import mysql from 'mysql2'
 import * as dotenv from 'dotenv'
-import Logging from './logging.js';
 import { DataSource } from 'typeorm';
 
 dotenv.config()
@@ -14,6 +12,9 @@ const AppDataConnection = new DataSource({
   username: process.env.MYSQL_USER,
   password: process.env.MYSQL_PASSWORD,
   // database: process.env.MYSQL_DATABASE,
+  
+  logging: true,
+  
 
   entities: [`${__dirname}/**/entities/*.{ts,js}`],
   migrations: [`${__dirname}/**/migrations/*.{ts,js}`]
