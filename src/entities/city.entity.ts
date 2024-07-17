@@ -1,7 +1,7 @@
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { StateEntity } from "./state.entity.js";
 
-@Entity()
+@Entity({name: 'city'})
 export class CityEntity {
   @PrimaryGeneratedColumn({
     name: 'id',
