@@ -2,7 +2,7 @@ import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "t
 import { NeighborhoodEntity } from "./neighborhood.entity.js";
 
 @Entity({name: 'address'})
-export class AdressEntity {
+export class AddressEntity {
   @PrimaryGeneratedColumn({
     name: 'id',
     type: 'int',
